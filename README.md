@@ -2,7 +2,7 @@
 Full path for creating spring mvc web app
 
 ## Greeting
-  1. Be carefull: Spring 3.2.x does **NOT** support Java 8, you **need upgrade** to Spring 4
+  1. Be carefull: Spring 3.2.x does **NOT** support Java 8, you **need to upgrade** to Spring 4
   2. Be carefull: Intellij IDEA automatically adds namespaces to config xml.
     * you added *<mvc:annotation-driven/>* 
     * IDEA added xmlns:mvc="http://www.springframework.org/schema/cache"
