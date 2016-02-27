@@ -15,3 +15,18 @@ Full path for creating spring mvc web app
     ```
     
     * **review** config.xml for any unknown declarations
+  3. For correct locale changing localeResolver **MUST** be declared in this way (name = **localeResolver**):
+  
+    ```
+        <bean id="localeResolver" class="org.springframework.web.servlet.i18n.SessionLocaleResolver"
+              p:defaultLocale="en_US"/>
+    ```
+    because:
+    
+    >In Spring MVC application, if you do not configure the Spring’s LocaleResolver, it will use the default AcceptHeaderLocaleResolver, which does not allow to change the locale. To solve it, try declare a SessionLocaleResolver bean in the Spring bean configuration file, it should be suits in most cases.
+    
+    and you will get 
+    
+    ```
+    org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Cannot change HTTP accept header - use a different locale resolution strategy
+    ```
