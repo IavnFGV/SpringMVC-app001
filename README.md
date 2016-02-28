@@ -27,7 +27,7 @@ Full path for creating spring mvc web app
     
     otherwise you will get 
     
-    ```
+    ```stacktrace
     org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Cannot change HTTP accept header - use a different locale resolution strategy
     ```
     
