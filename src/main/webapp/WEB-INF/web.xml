@@ -29,6 +29,10 @@
         <url-pattern>*.json</url-pattern>
     </servlet-mapping>
 
+    <servlet-mapping>
+        <servlet-name>app001Servlet</servlet-name>
+        <url-pattern>*.xml</url-pattern>
+    </servlet-mapping>
 
 
 

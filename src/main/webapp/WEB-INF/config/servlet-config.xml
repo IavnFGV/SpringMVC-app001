@@ -50,7 +50,7 @@
     <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource"
           p:basename="messages"></bean>
 
-    <bean p:prefix="/WEB-INF/jsp/" p:suffix=".jsp" p:order="1"
+    <bean p:prefix="/WEB-INF/jsp/" p:suffix=".jsp" p:order="2"
           class="org.springframework.web.servlet.view.InternalResourceViewResolver">
     </bean>
     <bean class="org.springframework.web.servlet.view.BeanNameViewResolver" p:order="0"/>
