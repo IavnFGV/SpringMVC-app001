@@ -30,3 +30,26 @@ Full path for creating spring mvc web app
     ```
     org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Cannot change HTTP accept header - use a different locale resolution strategy
     ```
+    
+  4. Due to use Spring 4 you should use
+  
+    ```xml
+    
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.2.2</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.2.2</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.2.2</version>
+        </dependency>
+    ```

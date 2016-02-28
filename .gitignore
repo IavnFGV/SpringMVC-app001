@@ -1,7 +1,9 @@
+/.idea
+*.idea
 ### Java template
 *.class
 
-# Mobile Tools for Java (J2ME)
+# Mobile Tools for Jsava (J2ME)
 .mtj.tmp/
 
 # Package Files #
