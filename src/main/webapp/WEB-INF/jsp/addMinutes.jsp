@@ -33,5 +33,6 @@ Language : <a href="?language=en_US">English</a>|<a href="?language=ru_RU">Russi
         </tr>
     </table>
 </form:form>
+<h1>Goal for a day is: ${goal.minutes}</h1>
 </body>
 </html>
