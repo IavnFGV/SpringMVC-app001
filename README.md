@@ -31,7 +31,7 @@ Full path for creating spring mvc web app
     org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Cannot change HTTP accept header - use a different locale resolution strategy
     ```
     
-  4. Due to use Spring 4 you should use
+  4. Due to use Spring 4 you should add this dependencies
   
     ```xml
     
@@ -47,9 +47,18 @@ Full path for creating spring mvc web app
             <version>2.2.2</version>
         </dependency>
         
+    ```
+    
+    not 
+    
+    ```
         <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-annotations</artifactId>
-            <version>2.2.2</version>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>1.4.1</version>
         </dependency>
     ```
+    
+    because you will get something like this
+    
+    > org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.view.ContentNegotiatingViewResolver#0' defined in ServletContext resource [/WEB-INF/config/servlet-config.xml]: Initialization of bean failed; nested exception is java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/ObjectMapper

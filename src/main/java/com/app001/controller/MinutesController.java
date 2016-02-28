@@ -38,10 +38,10 @@ public class MinutesController {
         run.setDesc("Run");
         activities.add(run);
         Activity swim = new Activity();
-        run.setDesc("Swim");
+        swim.setDesc("Swim");
         activities.add(swim);
         Activity bike = new Activity();
-        run.setDesc("Bike");
+        bike.setDesc("Bike");
         activities.add(bike);
         return activities;
     }
